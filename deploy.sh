@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! $(ls -A /var/www/html) ]; then
+if [ ! -f /var/www/html/index.php ]; then
     cd /tmp
     cp Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip /var/www/html/
     cd /var/www/html
